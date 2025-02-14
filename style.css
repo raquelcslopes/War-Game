@@ -1,0 +1,116 @@
+.container{
+  display: flex;
+}
+
+.card{
+  border: 0.5px solid grey;
+  height: 200px;
+  width: 150px;
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.row1,.row2 {
+  border: 1px solid black;
+}
+
+.row1 {
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+}
+
+.row2 {
+  width: 30px;
+  height: 30px;
+}
+
+.column1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  
+}
+
+.column2 {
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.column3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+}
+
+.column4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    width: 25x;
+    transform: rotate(180deg);
+}
+
+
+.columnCard2 {
+  width: 33, 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.heartCenter, .clubCenter, .diamondCenter, .spadeCenter{
+  width: 30px;
+  height: 30px;
+}
+
+.symbolTop, .symbolBottom {
+  width: 20px;
+  height: 15px;
+}
+
+.CenterTop, .CenterBottom {
+  display: flex;
+  width: 30px;
+  height: 50px;
+}
+
+.columnCard2 {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0px;
+}
+
+.columnCard3 {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.columnCard5{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.CenterBottom {
+  transform: rotate(180deg);
+}

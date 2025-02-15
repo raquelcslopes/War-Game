@@ -5,8 +5,8 @@
 .card{
   border: 0.5px solid grey;
   height: 200px;
-  width: 150px;
-  max-width: 150px;
+  width: 154px;
+  max-width: 154px;
   border-radius: 10px;
   display: flex;
   margin-bottom: 10px;
@@ -64,21 +64,6 @@
     transform: rotate(180deg);
 }
 
-
-.columnCard2 {
-  width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.columnCard6 {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
 .heartCenter, .clubCenter, .diamondCenter, .spadeCenter{
   width: 50px;
   height: 50px;
@@ -91,94 +76,68 @@
 
 .CenterTop, .CenterBottom {
   display: flex;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
-.CenterTopSmaller, .CenterBottomSmaller {
+.Top, .Bottom {
   display: flex;
   width: 40px;
   height: 40px;
 }
 
-.columnCard7 {
+.CenterTopSmaller {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-top: 40px;
-  padding-right: 5px;
-}
-
-
-.columnCard2 {
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 0px;
-}
-
-.columnCard3 {
-  width: 100%;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.columnCard5{
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.columnCard8 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-top: 40px;
-  padding-right: 5px;
-}
-
-.CenterBottom {
-  transform: rotate(180deg);
-}
-
-.CenterBottom8 {
-  transform: rotate(180deg);
-  display: flex;
-  width: 30px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   position: relative;
-  top:15px
+  bottom: 40px;
+  top: 5px;
 }
 
-.columnCard9 {
-  transform: rotate(180deg);
+.TopSmaller, .BottomSmaller {
   display: flex;
-  width: 30px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
+}
+
+.BottomSmaller {
+  transform: rotate(180deg);
+}
+
+
+.CenterBottomSmaller{
+  transform: rotate(180deg);
   position: relative;
-  top: 35%;
+  width: 40px;
+  height: 40px;
+}
+
+.king {
+  height: 100px;
+}
+
+.kinginvert {
+  height: 100px;
+  transform: rotate(180deg);
+}
+
+.queen {
+  height: 100px;
+}
+
+.queeninvert {
+  height: 100px;
+  transform: rotate(180deg);
+}
+
+.jack {
+  height: 80px;
+}
+
+.jackinvert {
+  height: 80px;
+  transform: rotate(180deg);
+  position: relative;
   right: 5px;
-}
-
-.columnCard10 {
-  display: flex;
-  width: 30px;
-  height: 50px;
-flex-direction: column;
-position:relative;
-top:30px;
-right: 7px;
-}
-
-.CenterBottom10 {
-  transform: rotate(180deg);
-  position: relative;
-  top: 70px;;
 }

@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.div {
+  margin-left: 5px;
+}
+
 .card{
   border: 0.5px solid grey;
   height: 200px;
@@ -42,6 +46,7 @@
 .column3 {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-around; 
     width: 100%;
 }
@@ -49,6 +54,7 @@
 .column4 {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-around; 
   width: 100%;
 }
@@ -72,33 +78,32 @@
 .symbolTop, .symbolBottom {
   width: 15px;
   height: 15px;
+  margin-left: 3px;
 }
 
 .CenterTop, .CenterBottom {
   display: flex;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .Top, .Bottom {
   display: flex;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .CenterTopSmaller {
   display: flex;
-  width: 40px;
-  height: 40px;
-  position: relative;
-  bottom: 40px;
+  width: 30px;
+  height: 30px;
   top: 5px;
 }
 
 .TopSmaller, .BottomSmaller {
   display: flex;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .BottomSmaller {
@@ -109,8 +114,8 @@
 .CenterBottomSmaller{
   transform: rotate(180deg);
   position: relative;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .king {

@@ -9,12 +9,19 @@
 .card{
   border: 0.5px solid grey;
   height: 200px;
-  width: 154px;
-  max-width: 154px;
+  width: 150px;
+  max-width: 150px;
   border-radius: 10px;
   display: flex;
-  margin-bottom: 10px;
-  margin-right: 10px;
+  margin: 10px;
+  padding: 1%;
+
+}
+
+.background {
+  background-image: url(./Images/background_photo.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .red {
@@ -30,8 +37,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 33,3px;
-  
 }
 
 .column2 {
@@ -60,24 +65,22 @@
 }
 
 .column5 {
-    width: 33,3px;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: flex-end;
     display: flex;
-    width: 25x;
     transform: rotate(180deg);
 }
 
 .heartCenter, .clubCenter, .diamondCenter, .spadeCenter{
-  width: 50px;
-  height: 50px;
+  width: 45%;
+  height: 30%;
 }
 
 .symbolTop, .symbolBottom {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   margin-left: 3px;
 }
 
@@ -119,30 +122,22 @@
 }
 
 .king {
-  height: 100px;
+  height: 70px;
+  position: relative;
+  right: 8px;
 }
 
-.kinginvert {
-  height: 100px;
+.invert {
+  height: 70px;
   transform: rotate(180deg);
+  position: relative;
+  right: 8px;
 }
 
 .queen {
   height: 100px;
 }
 
-.queeninvert {
-  height: 100px;
-  transform: rotate(180deg);
-}
-
 .jack {
   height: 80px;
-}
-
-.jackinvert {
-  height: 80px;
-  transform: rotate(180deg);
-  position: relative;
-  right: 5px;
 }

@@ -21,7 +21,7 @@ function createDecks() {
 
 //TIE
 function war() {
-    if (array1 > 4 && array2 > 4) {
+    if (array1.length > 4 && array2.length > 4) {
         let firstCardPlayer1 = array1.shift();
         table.push(firstCardPlayer1)
 
@@ -99,12 +99,18 @@ function drawCards() {
     }
 }
 
+function game () {
+    while (array1.length > 0 && array2.length > 0) {
+        drawCards();
+    }
+}
 
 //VARIABLES
 let array1 = [];
 let array2 = [];
 let table = [];
 let deck = [];
+game();
 
 const naipes = {
     clubs: "♣",

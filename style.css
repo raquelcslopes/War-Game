@@ -18,6 +18,20 @@
     display: flex;
     margin: 10px;
     padding: 1%;
+    position: absolute;
+    top:50vh;
+    background-color: white;
+  }
+
+  .cards{
+    border: 0.5px solid grey;
+    height: 200px;
+    width: 150px;
+    max-width: 150px;
+    border-radius: 10px;
+    display: flex;
+    margin: 10px;
+    padding: 1%;
   }
   
   .background {
@@ -151,10 +165,41 @@ transform: rotate(10deg);
 }
 
 #card2 {
-    transform: rotate(8deg);
-    }
+transform: rotate(8deg);
+}
 
-    #card3 {
-        position: absolute;
-        transform: rotate(2deg);
-        }
+#card3 {
+position: absolute;
+transform: rotate(2deg);
+}
+
+#containerCardsPlayer1 {
+  border: 0.5px solid grey;
+  height: 200px;
+  width: 150px;
+  max-width: 150px;
+  border-radius: 10px;
+  display: flex;
+  margin: 10px;
+  padding: 1%;
+  top:50vh;
+  background-color: white;
+}
+
+#containerCardsPlayer2 {
+  border: 0.5px solid grey;
+  height: 200px;
+  width: 150px;
+  max-width: 150px;
+  border-radius: 10px;
+  display: flex;
+  margin: 10px;
+  padding: 1%;
+  top:50vh;
+  background-color: white;
+}
+
+#card {
+  margin-left: 10px;
+  margin-right: 10px;
+}

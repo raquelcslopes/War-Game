@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/style.css">
-</head>
-<body>
-  <!--adicionar botoes-->
-  <button id="play">Let's play!</button>
-<button id="drawCards">Draw cards</button>
-    <div id="container" class="container A">
-        <div id="card" class="container ">
-            <div id="card1" class="cards background"></div>
-            <div id="card2"  class="cards background"></div>
-          <div id="card3" class="cards background"></div>
-      
-          <div id="card" class="container ">
-            <div id="card1" class="cards background"></div>
-            <div id="card2"  class="cards background"></div>
-          <div id="card3" class="cards background"></div>
-          </div>
-          </div>
-          </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WAR GAME</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <button id="play">Let's play!</button>
+    <button id="drawCards">Draw cards</button>
+    <div class="decoration border">
+      <div id="card" class="containerPlayer1">
+        <div id="card1" class="cards background"></div>
+        <div id="card2" class="cards background"></div>
+        <div id="card3" class="cards background"></div>
 
-  <div id="containerCardsPlayer1"></div>
-  <div id="containerCardsPlayer2"></div>
+        <div id="card" class="containerPlayer2">
+          <div id="card1" class="cards background"></div>
+          <div id="card2" class="cards background"></div>
+          <div id="card3" class="cards background"></div>
+        </div>
+      </div>
 
+      <div id="containerCardsPlayer1"></div>
+      <div id="containerCardsPlayer2"></div>
+    </div>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>

@@ -1,0 +1,31 @@
+body {
+   background-color:  rgb(36, 70, 39);
+}
+
+p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.title {
+    font-weight: bold;
+    font-size: large;
+}
+
+div {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 5vh;
+}
+
+button {
+    padding: 30px;
+    font-size: large;
+    border-radius: 20px;
+}
+
+

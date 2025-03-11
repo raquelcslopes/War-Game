@@ -21,6 +21,8 @@ function createDecks() {
 
 //TIE
 function war() {
+  table = [];
+
     if (array1.length > 4 && array2.length > 4) {
         let firstCardPlayer1 = array1.shift();
         table.push(firstCardPlayer1)
@@ -54,7 +56,6 @@ function war() {
             console.log("Player 1 wins");
             array1.push(...table)
         }
-        table = [];
         console.log(fourthCardPlayer1)
         console.log(fourthCardPlayer2)
         console.log(array1);
@@ -62,7 +63,6 @@ function war() {
         console.log(table)
     }
 }
-
 
 //REMOVE 2 CARDS FROM TOP
 function drawCards() {
@@ -110,7 +110,6 @@ let array1 = [];
 let array2 = [];
 let table = [];
 let deck = [];
-game();
 
 const naipes = {
     clubs: "♣",

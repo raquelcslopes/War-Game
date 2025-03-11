@@ -200,6 +200,34 @@ background-color: white;
 }
 
 #card {
-margin-left: 10px;
+margin-left: 2vw;
 margin-right: 10px;
+margin-top: 10vh;
+}
+
+.containerCards {
+  display: flex;
+  gap: 300px;
+  align-items: center;
+  justify-content: center;
+}
+
+.border {
+  border: 7px solid rgb(232, 221, 200);
+}
+
+p {
+  color: white;
+  font-weight: bold;
+  display: flex;
+  position: relative;
+  bottom: 15vh;
+  left: 26vw;;
+}
+
+button {
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border-radius: 30px;
 }

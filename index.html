@@ -7,9 +7,53 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <button id="play">Let's play!</button>
-    <button id="drawCards">Draw cards</button>
-    <div class="decoration border">
+    <div class="mainContainer">
+<aside class="container1">
+  <div class="buttons">
+    <button id="play" class="button">Let's play!</button>
+    <button id="drawCards" class="button">Draw cards</button>
+  </div>
+</aside>
+
+<article class="container2">
+  <div class="littleContainer1">
+    <div class="deck">
+        <div id="card1" class="cards background"></div>
+        <div id="card2" class="cards background"></div>
+        <div id="card3" class="cards background"></div>
+    </div>
+  </div>
+
+  <div class="littleContainer2">
+    <div id="#containerCardsPlayer1"></div>
+    <div id="#containerCardsPlayer2"></div>
+    </div>
+
+  <div class="littleContainer3">
+    <div class="deck">
+      <div id="card1" class="cards background"></div>
+      <div id="card2" class="cards background"></div>
+      <div id="card3" class="cards background"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="container3">
+  <div class="buttons">
+    <a href="./homePage.html"><button class="button" >Go to menu </button></a>
+    <a href="./help.html"><button class="button">Help me again</button></a>
+  </div>
+</aside>
+</div>
+
+
+
+
+
+
+
+
+<!--
       <div id="card" class="containerPlayer1">
         <div id="card1" class="cards background"></div>
         <div id="card2" class="cards background"></div>
@@ -21,13 +65,7 @@
           <div id="card3" class="cards background"></div>
         </div>
       </div>
-
-      <div class = "containerCards">
-        <p>Player 1</p>
-      <div id="containerCardsPlayer1"></div>
-      <p>Player 2</p>
-      <div id="containerCardsPlayer2"></div>
-    </div>
+    -->
   </div>
     <script src="./script.js"></script>
   </body>

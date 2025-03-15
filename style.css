@@ -33,6 +33,7 @@ body {
   display: flex;
   margin: 10px;
   padding: 1%;
+  background-color: white;
 }
 
 .background {
@@ -166,6 +167,17 @@ body {
 }
 
 /*DISPLAY SCREEN*/
+
+#card1 {
+  position: relative;
+  left: 160px;
+}
+
+#card3 {
+  position: relative;
+  right: 220px;
+}
+
 .mainContainer {
   display: flex;
   flex-flow: row;
@@ -174,7 +186,6 @@ body {
 
 .mainContainer > * {
   display: flex;
-  border: 3px solid black;
   height: 100%;
 }
 
@@ -185,7 +196,7 @@ body {
 }
 
 .container2 {
-  flex-basis: 60%;
+  flex-basis: 100%;
   flex-flow: column;
 }
 .container3 {
@@ -226,10 +237,40 @@ body {
   gap: 3%;
 }
 
+.buttonsPlay {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  height: 100%;
+  width: 100%;
+  gap: 3%;
+}
+
+#play {
+  width: 300px;
+  display: block;
+  position: absolute;
+  bottom: 55%;
+}
+
+.menu {
+  width: 300px;
+}
+
+.help{
+  width: 300px;
+}
+
+#drawCards {
+  width: 300px;
+  display: block;
+  position: absolute;
+  bottom: 50%;
+}
+
 .littleContainer1 {
   display: flex;
   flex-basis: 30%;
-  border: 3px solid rgb(255, 255, 255);
   align-items: center;
   justify-content: center;
 }
@@ -237,13 +278,13 @@ body {
 .littleContainer2 {
   display: flex;
   flex-basis: 40%;
-  border: 3px solid rgb(255, 252, 252);
+  align-items: center;
+  justify-content: center;
 }
 
 .littleContainer3 {
   display: flex;
   flex-basis: 30%;
-  border: 3px solid rgb(255, 255, 255);
   align-items: center;
   justify-content: center;
 }
@@ -252,38 +293,29 @@ body {
   display: flex;
 }
 
-#card1 {
-  position: relative;
-  left: 160px;
-}
-
-#card3 {
-  position: relative;
-  right: 220px;
-}
-
-#containerCardsPlayer1 {
-  display: flex;
-  border: 0.5px solid grey;
+.playerCards {
+  border: 0.5px solid rgb(9, 41, 17);
   height: 200px;
   width: 150px;
   max-width: 150px;
   border-radius: 10px;
   margin: 10px;
-  padding: 1%;
-  top:50vh;
-  background-color: white;
+  background-color:white;
+  display: flex;
 }
 
-#containerCardsPlayer2 {
-  border: 0.5px solid grey;
-  height: 200px;
-  width: 150px;
-  max-width: 150px;
-  border-radius: 10px;
+.nameCPU {
   display: flex;
-  margin: 10px;
-  padding: 1%;
-  top:50vh;
-  background-color: white;
+  color: white;
+  font-weight: bold;
+  justify-content:center;
+  align-self: flex-start;
+}
+
+.namePlayer {
+  display: flex;
+  color: white;
+  font-weight: bold;
+  justify-content:center;
+  align-self: flex-start;
 }

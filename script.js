@@ -4,7 +4,8 @@ function showDeck() {
   createDecks();
   const container1 = document.getElementById("field");
 
-  document.getElementById("card").style.visibility = "visible";
+  document.getElementById("deck").style.visibility = "visible";
+  document.getElementById("deck2").style.visibility = "visible";
 }
 
 const createDecks = () => {
@@ -1189,6 +1190,7 @@ for (const [i, naipe] of naipes.entries()) {
 
 
 document.getElementById("deck").style.visibility = "hidden"
+document.getElementById("deck2").style.visibility = "hidden"
 
 //CREATE PLAY BUTTON
 const button = document.getElementById("play")

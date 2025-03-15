@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="mainContainer">
+    <div id="field" class="mainContainer">
 <aside class="container1">
-  <div class="buttons">
+  <div class="buttonsPlay">
     <button id="play" class="button">Let's play!</button>
     <button id="drawCards" class="button">Draw cards</button>
   </div>
@@ -17,7 +17,8 @@
 
 <article class="container2">
   <div class="littleContainer1">
-    <div class="deck">
+    <div class="nameCPU">CPU</div>
+    <div id="deck" class="deck">
         <div id="card1" class="cards background"></div>
         <div id="card2" class="cards background"></div>
         <div id="card3" class="cards background"></div>
@@ -25,12 +26,13 @@
   </div>
 
   <div class="littleContainer2">
-    <div id="#containerCardsPlayer1"></div>
-    <div id="#containerCardsPlayer2"></div>
+    <div id="containerCardsPlayer1" class="playerCards"></div>
+    <div id="containerCardsPlayer2" class="playerCards"></div>
     </div>
 
   <div class="littleContainer3">
-    <div class="deck">
+    <div class="namePlayer">That's u</div>
+    <div id="deck2" class="deck">
       <div id="card1" class="cards background"></div>
       <div id="card2" class="cards background"></div>
       <div id="card3" class="cards background"></div>
@@ -40,32 +42,11 @@
 
 <aside class="container3">
   <div class="buttons">
-    <a href="./homePage.html"><button class="button" >Go to menu </button></a>
-    <a href="./help.html"><button class="button">Help me again</button></a>
+    <a href="./homePage.html"><button class="button menu" >Go to menu </button></a>
+    <a href="./help.html"><button class="button help">Help me again</button></a>
   </div>
 </aside>
 </div>
-
-
-
-
-
-
-
-
-<!--
-      <div id="card" class="containerPlayer1">
-        <div id="card1" class="cards background"></div>
-        <div id="card2" class="cards background"></div>
-        <div id="card3" class="cards background"></div>
-
-        <div id="card" class="containerPlayer2">
-          <div id="card1" class="cards background"></div>
-          <div id="card2" class="cards background"></div>
-          <div id="card3" class="cards background"></div>
-        </div>
-      </div>
-    -->
   </div>
     <script src="./script.js"></script>
   </body>

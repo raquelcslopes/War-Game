@@ -10,16 +10,14 @@ function showDeck() {
 
 const createDecks = () => {
   for (let i = 0; i < 26; i++) {
-    let randomNumber = Math.floor(Math.random() * 52)
+    let randomNumber = Math.floor(Math.random() * deck.length)
     array1.push(deck[randomNumber]);
-    deck.pop(deck[randomNumber]);
+    deck.splice(deck[randomNumber],1);
 
-    let randomNumbers = Math.floor(Math.random() * 52)
+    let randomNumbers = Math.floor(Math.random() * deck.length)
     array2.push(deck[randomNumbers]);
-    deck.pop(deck[randomNumbers]);
+    deck.splice(deck[randomNumbers],1);
   }
-  console.table(array1)
-  console.table(array2)
 }
 
 //TIE
@@ -74,7 +72,6 @@ function war() {
 //REMOVE 2 CARDS FROM TOP
 function drawCards() {
   let cardRemoved1 = array1.shift()
-  console.log(cardRemoved1);
 
   const container = document.getElementById("containerCardsPlayer1");
   container.innerHTML = cardRemoved1.draw;
@@ -82,7 +79,6 @@ function drawCards() {
   let cardRemoved2 = array2.shift()
   const container2 = document.getElementById("containerCardsPlayer2");
   container2.innerHTML = cardRemoved2.draw;
-  console.log(cardRemoved2);
 
 
   //COMPARE THE CARDS VALUE
@@ -90,17 +86,10 @@ function drawCards() {
     console.log("Player 1 wins");
     array1.push(cardRemoved1);
     array1.push(cardRemoved2);
-
-    console.log(array1);
-    console.log(array2);
-
   } else if (cardRemoved1.value < cardRemoved2.value) {
     console.log("Player 2 wins");
     array2.push(cardRemoved1);
     array2.push(cardRemoved2);
-
-    console.log(array1);
-    console.log(array2);
   } else {
     war();
   }
@@ -109,6 +98,10 @@ function drawCards() {
 function game() {
   while (array1.length > 0 && array2.length > 0) {
     drawCards();
+  }
+
+  if(array1.length === 0 || array2.length=== 0) {
+    console.error("GAME OVER")
   }
 }
 
@@ -1194,14 +1187,22 @@ document.getElementById("deck2").style.visibility = "hidden"
 
 //CREATE PLAY BUTTON
 const button = document.getElementById("play")
-button.addEventListener("click", showDeck);
-
+button.addEventListener("click", () => {
+  showDeck(),
+  document.getElementById("drawCards").disabled = false;
+} );
 document.body.appendChild(button);
 
 
 //CREATE BUTTON TO DRAW CARDS
 const buttonDrawCards = document.getElementById("drawCards")
 
-buttonDrawCards.addEventListener("click", drawCards);
+buttonDrawCards.addEventListener("click", () => {
+  setTimeout(() => {
+    drawCards();
+    document.body.appendChild(buttonDrawCards);
+  },1000)
+  document.getElementById("card3Up").classList.add("animationDown");
+    document.getElementById("card3Down").classList.add("animationUp");
+})
 
-document.body.appendChild(buttonDrawCards);

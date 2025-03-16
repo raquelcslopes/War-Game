@@ -173,7 +173,7 @@ body {
   left: 160px;
 }
 
-#card3 {
+#card3Up, #card3Down {
   position: relative;
   right: 220px;
 }
@@ -205,7 +205,7 @@ body {
   align-items: center;
 }
 
-.button {
+.button, .buttonDraw {
   align-items: center;
   background-color: #fcfcfd;
   border-radius: 4px;
@@ -277,7 +277,9 @@ body {
 
 .littleContainer2 {
   display: flex;
-  flex-basis: 40%;
+  flex-flow: column wrap;
+  width: 50%;
+  align-self: center;
   align-items: center;
   justify-content: center;
 }
@@ -318,4 +320,42 @@ body {
   font-weight: bold;
   justify-content:center;
   align-self: flex-start;
+}
+
+.buttonDraw:disabled {
+  cursor: none;
+  background-color: grey;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+  rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #2f2f39 0 -3px 0 inset;
+}
+
+#containerCardsPlayer1, #containerCardsPlayer2{
+  display: flex;
+  align-self: center ;
+}
+
+.animationUp {
+  animation: slideUp 1s ease-out;
+}
+
+.animationDown {
+  animation: slideDown 1s ease-out;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translateY(-270px);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translateY(270px);
+  }
 }

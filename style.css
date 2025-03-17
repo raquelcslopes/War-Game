@@ -306,15 +306,7 @@ body {
   display: flex;
 }
 
-.nameCPU {
-  display: flex;
-  color: white;
-  font-weight: bold;
-  justify-content:center;
-  align-self: flex-start;
-}
-
-.namePlayer {
+.nameCPU, .namePlayer  {
   display: flex;
   color: white;
   font-weight: bold;

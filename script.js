@@ -19,53 +19,34 @@ const createDecks = () => {
     deck.splice(deck[randomNumbers],1);
   }
 }
-
+//metodos para arrays
 //TIE
 function war() {
   table = [];
 
   if (array1.length > 4 && array2.length > 4) {
-    let firstCardPlayer1 = array1.shift();
-    table.push(firstCardPlayer1)
-
-    let secondCardPlayer1 = array1.shift();
-    table.push(secondCardPlayer1);
-
-    let thirdCardPlayer1 = array1.shift();
-    table.push(thirdCardPlayer1)
-
+    let threeCardPlayer1 = array1.splice(0,3);
+    table.push(threeCardPlayer1);
+    
     let fourthCardPlayer1 = array1.shift();
-    table.push(fourthCardPlayer1)
+    table.push(fourthCardPlayer1);
 
-    let firstCardPlayer2 = array2.shift();
-    table.push(firstCardPlayer2)
-
-    let secondCardPlayer2 = array2.shift();
-    table.push(secondCardPlayer2)
-
-    let thirdCardPlayer2 = array2.shift();
-    table.push(thirdCardPlayer2)
-
+    let threeCardPlayer2 = array2.splice(0,3);
+    table.push(threeCardPlayer2);
+    
     let fourthCardPlayer2 = array2.shift();
-    table.push(fourthCardPlayer2)
+    table.push(fourthCardPlayer2);
 
     if (fourthCardPlayer2.value > fourthCardPlayer1.value) {
-      console.log("Player 2 wins");
       array2.push(...table);
 
     } else if (fourthCardPlayer2.value < fourthCardPlayer1.value) {
-      console.log("Player 1 wins");
       array1.push(...table)
     }
 
     if (fourthCardPlayer1.value === fourthCardPlayer2.value) {
       war();
     }
-    console.log(fourthCardPlayer1)
-    console.log(fourthCardPlayer2)
-    console.log(array1);
-    console.log(array2)
-    console.log(table)
   }
 }
 
@@ -83,11 +64,9 @@ function drawCards() {
 
   //COMPARE THE CARDS VALUE
   if (cardRemoved1.value > cardRemoved2.value) {
-    console.log("Player 1 wins");
     array1.push(cardRemoved1);
     array1.push(cardRemoved2);
   } else if (cardRemoved1.value < cardRemoved2.value) {
-    console.log("Player 2 wins");
     array2.push(cardRemoved1);
     array2.push(cardRemoved2);
   } else {
@@ -101,7 +80,7 @@ function game() {
   }
 
   if(array1.length === 0 || array2.length=== 0) {
-    console.error("GAME OVER")
+    console.info("GAME OVER")
   }
 }
 

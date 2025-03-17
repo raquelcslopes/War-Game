@@ -1,4 +1,5 @@
-.container{
+/*CARDS*/
+.container {
   display: flex;
 }
 body {
@@ -9,7 +10,7 @@ body {
   margin-left: 5px;
 }
 
-.card{
+.card {
   border: 0.5px solid grey;
   height: 200px;
   width: 150px;
@@ -19,11 +20,11 @@ body {
   margin: 10px;
   padding: 1%;
   position: absolute;
-  top:50vh;
+  top: 50vh;
   background-color: white;
 }
 
-.cards{
+.cards {
   border: 0.5px solid grey;
   height: 200px;
   width: 150px;
@@ -32,6 +33,7 @@ body {
   display: flex;
   margin: 10px;
   padding: 1%;
+  background-color: white;
 }
 
 .background {
@@ -57,57 +59,62 @@ body {
 }
 
 .column2 {
-    width: 100%;
-    justify-content: space-around;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .column3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around; 
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .column4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around; 
+  justify-content: space-around;
   width: 100%;
 }
 
 .column5 {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: flex-end;
-    display: flex;
-    transform: rotate(180deg);
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  transform: rotate(180deg);
 }
 
-.heartCenter, .clubCenter, .diamondCenter, .spadeCenter{
+.heartCenter,
+.clubCenter,
+.diamondCenter,
+.spadeCenter {
   width: 45%;
   height: 30%;
 }
 
-.symbolTop, .symbolBottom {
+.symbolTop,
+.symbolBottom {
   width: 15px;
   height: 15px;
   margin-left: 3px;
 }
 
-.CenterTop, .CenterBottom {
+.CenterTop,
+.CenterBottom {
   display: flex;
   width: 30px;
   height: 30px;
 }
 
-.Top, .Bottom {
+.Top,
+.Bottom {
   display: flex;
   width: 30px;
   height: 30px;
@@ -120,7 +127,8 @@ body {
   top: 5px;
 }
 
-.TopSmaller, .BottomSmaller {
+.TopSmaller,
+.BottomSmaller {
   display: flex;
   width: 30px;
   height: 30px;
@@ -130,8 +138,7 @@ body {
   transform: rotate(180deg);
 }
 
-
-.CenterBottomSmaller{
+.CenterBottomSmaller {
   transform: rotate(180deg);
   position: relative;
   width: 30px;
@@ -159,75 +166,188 @@ body {
   height: 80px;
 }
 
+/*DISPLAY SCREEN*/
+
 #card1 {
-position:absolute;
-transform: rotate(20deg);
+  position: relative;
+  left: 160px;
 }
 
-#card2 {
-  position:absolute;
-transform: rotate(10deg);
+#card3Up, #card3Down {
+  position: relative;
+  right: 220px;
 }
 
-#card3 {
-transform: rotate(5deg);
-}
-
-#containerCardsPlayer1 {
-border: 0.5px solid grey;
-height: 200px;
-width: 150px;
-max-width: 150px;
-border-radius: 10px;
-display: flex;
-margin: 10px;
-padding: 1%;
-top:50vh;
-background-color: white;
-}
-
-#containerCardsPlayer2 {
-border: 0.5px solid grey;
-height: 200px;
-width: 150px;
-max-width: 150px;
-border-radius: 10px;
-display: flex;
-margin: 10px;
-padding: 1%;
-top:50vh;
-background-color: white;
-}
-
-#card {
-margin-left: 2vw;
-margin-right: 10px;
-margin-top: 10vh;
-}
-
-.containerCards {
+.mainContainer {
   display: flex;
-  gap: 300px;
+  flex-flow: row;
+  height: 90vh;
+}
+
+.mainContainer > * {
+  display: flex;
+  height: 100%;
+}
+
+.container1 {
+  flex-basis: 20%;
+  justify-content: center;
+  align-items: center;
+}
+
+.container2 {
+  flex-basis: 100%;
+  flex-flow: column;
+}
+.container3 {
+  flex-basis: 20%;
+  justify-content: center;
+  align-items: center;
+}
+
+.button, .buttonDraw {
+  align-items: center;
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395a;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  width: 100%;
+  justify-content: center;
+  transition: box-shadow 0.15s, transform 0.15s;
+  font-size: 18px;
+}
+
+.button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.buttons {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  height: 20%;
+  gap: 3%;
+}
+
+.buttonsPlay {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  height: 100%;
+  width: 100%;
+  gap: 3%;
+}
+
+#play {
+  width: 300px;
+  display: block;
+  position: absolute;
+  bottom: 55%;
+}
+
+.menu {
+  width: 300px;
+}
+
+.help{
+  width: 300px;
+}
+
+#drawCards {
+  width: 300px;
+  display: block;
+  position: absolute;
+  bottom: 50%;
+}
+
+.littleContainer1 {
+  display: flex;
+  flex-basis: 30%;
   align-items: center;
   justify-content: center;
 }
 
-.border {
-  border: 7px solid rgb(232, 221, 200);
+.littleContainer2 {
+  display: flex;
+  flex-flow: column wrap;
+  width: 50%;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
 }
 
-p {
+.littleContainer3 {
+  display: flex;
+  flex-basis: 30%;
+  align-items: center;
+  justify-content: center;
+}
+
+.deck {
+  display: flex;
+}
+
+.playerCards {
+  border: 0.5px solid rgb(9, 41, 17);
+  height: 200px;
+  width: 150px;
+  max-width: 150px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color:white;
+  display: flex;
+}
+
+.nameCPU, .namePlayer  {
+  display: flex;
   color: white;
   font-weight: bold;
-  display: flex;
-  position: relative;
-  bottom: 15vh;
-  left: 26vw;;
+  justify-content:center;
+  align-self: flex-start;
 }
 
-button {
-  padding: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  border-radius: 30px;
+.buttonDraw:disabled {
+  cursor: none;
+  background-color: grey;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+  rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #2f2f39 0 -3px 0 inset;
+}
+
+#containerCardsPlayer1, #containerCardsPlayer2{
+  display: flex;
+  align-self: center ;
+}
+
+.animationUp {
+  animation: slideUp 1s ease-out;
+}
+
+.animationDown {
+  animation: slideDown 1s ease-out;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translateY(-270px);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translateY(270px);
+  }
 }

@@ -7,27 +7,46 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <button id="play">Let's play!</button>
-    <button id="drawCards">Draw cards</button>
-    <div class="decoration border">
-      <div id="card" class="containerPlayer1">
+    <div id="field" class="mainContainer">
+<aside class="container1">
+  <div class="buttonsPlay">
+    <button id="play" class="button">Let's play!</button>
+    <button id="drawCards" class="buttonDraw" disabled >Draw cards</button>
+  </div>
+</aside>
+
+<article class="container2">
+  <div class="littleContainer1">
+    <div class="nameCPU">CPU</div>
+    <div id="deck" class="deck">
         <div id="card1" class="cards background"></div>
         <div id="card2" class="cards background"></div>
-        <div id="card3" class="cards background"></div>
-
-        <div id="card" class="containerPlayer2">
-          <div id="card1" class="cards background"></div>
-          <div id="card2" class="cards background"></div>
-          <div id="card3" class="cards background"></div>
-        </div>
-      </div>
-
-      <div class = "containerCards">
-        <p>Player 1</p>
-      <div id="containerCardsPlayer1"></div>
-      <p>Player 2</p>
-      <div id="containerCardsPlayer2"></div>
+        <div id="card3Up" class="cards background"></div>
     </div>
+  </div>
+
+  <div class="littleContainer2">
+    <div id="containerCardsPlayer1" class="playerCards"></div>
+    <div id="containerCardsPlayer2" class="playerCards"></div>
+    </div>
+
+  <div class="littleContainer3">
+    <div class="namePlayer">That's u</div>
+    <div id="deck2" class="deck">
+      <div id="card1" class="cards background"></div>
+      <div id="card2" class="cards background"></div>
+      <div id="card3Down" class="cards background"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="container3">
+  <div class="buttons">
+    <a href="./homePage.html"><button class="button menu" >Go to menu </button></a>
+    <a href="./help.html"><button class="button help">Help me again</button></a>
+  </div>
+</aside>
+</div>
   </div>
     <script src="./script.js"></script>
   </body>

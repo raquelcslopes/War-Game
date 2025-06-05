@@ -1,0 +1,21 @@
+# Node modules (if using npm/yarn)
+node_modules/
+
+# Mac system files
+.DS_Store
+
+# VS Code settings
+.vscode/
+
+# Build output (if you add a build process)
+dist/
+build/
+
+# Logs
+*.log
+
+# Environment files (if any)
+.env
+
+# OS generated files
+Thumbs.db
